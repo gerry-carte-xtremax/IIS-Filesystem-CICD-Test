@@ -33,5 +33,10 @@ namespace SampleWebsite.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public IActionResult Secret()
+        {
+            return Ok("This is secret endpoint");
+        }
     }
 }
